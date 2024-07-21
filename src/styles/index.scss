@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p.display {
+    @apply text-xxl;
+  }
+
+  h1 {
+    @apply text-xl;
+  }
+  h2 {
+    @apply text-lg;
+  }
+  h3 {
+    @apply text-md;
+  }
+  h4 {
+    @apply text-sm;
+  }
+
+  span,
+  label,
+  p {
+    &.xl {
+      @apply text-md;
+    }
+    &.lg {
+      @apply text-sm;
+    }
+    &.md {
+      @apply text-xs;
+    }
+    &.sm {
+      @apply text-xxs;
+    }
+    @media screen and (min-width: 768px) {
+      &.xl {
+        @apply text-sm;
+      }
+      &.lg {
+        @apply text-xs;
+      }
+      &.md {
+        @apply text-xxs;
+      }
+      &.sm {
+        @apply text-xxxs;
+      }
+    }
+  }
+
+  caption {
+    @apply text-xxxs;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  label,
+  p {
+    &.bold {
+      @apply font-bold;
+    }
+    &.medium {
+      @apply font-medium;
+    }
+    &.regular {
+      @apply font-normal;
+    }
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg border border-primary-opacity p-8;
+  }
+}

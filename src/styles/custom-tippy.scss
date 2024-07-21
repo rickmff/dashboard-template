@@ -1,0 +1,16 @@
+.tippy-box {
+  background-color: #666;
+  border-radius: 8px;
+  background-image: url('src/assets/icons/info-grey.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+
+  .tippy-arrow {
+    display: none;
+  }
+
+  .tippy-content {
+    line-height: 20px;
+    padding: 16px 16px 16px 48px;
+  }
+}

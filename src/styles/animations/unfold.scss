@@ -1,0 +1,10 @@
+.unfold-enter-from,
+.unfold-leave-to {
+  width: 0;
+  overflow-x: hidden;
+}
+
+.unfold-enter-active,
+.unfold-leave-active {
+  transition: width 0.4s ease-in-out;
+}
